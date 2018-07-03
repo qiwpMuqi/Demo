@@ -1,0 +1,53 @@
+<html>
+    <!--描述网页信息-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+        <style>
+            .btn{height:40px; width:100%; padding: 0px 30px; background-color: #0071E7; border: solid 1px #0071E7; border-radius:5px; font-size: 1.2em; color: white}
+            </style>
+        
+        <script>
+            
+            //提供给OC调用JS的方法列表
+        function alertName(msg) {
+            location.href = 'rrcc://showName_?'+msg;
+
+        }
+        
+        function alertSendMsg(num,msg) {
+            alert('这是我的手机号:' + num + ',' + msg + '!!')
+        }
+        
+        //JS响应方法列表
+        function btnClick1() {
+            location.href = "rrcc://showMobile"
+        }
+        
+        function btnClick2() {
+            
+            location.href = "rrcc://showName_?Terry"
+        }
+        </script>
+        
+        
+    </head>
+    
+    <!--网页具体内容-->
+    <body>
+     
+        
+        <div>
+            <button class="btn" type="button" onclick="btnClick1()">JS上的按钮1</button>
+        </div>
+        <br/>
+        
+        <div>
+            <button class="btn" type="button" onclick="btnClick2()">按钮2</button>
+        </div>
+        <br/>
+        
+        
+    </body>
+</html>
+
